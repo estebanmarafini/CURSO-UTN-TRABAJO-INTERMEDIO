@@ -1,62 +1,89 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Tinos&display=swap');
 
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    border: 1px double black;
-    height: 100px;
-    align-items: center;
+
+body{
+    font-size: 20px;
+}
+.contenedor-principal{
+
+    /*width: 1280px;*/
+    font-family: "DM Sans", sans-serif;
 }
 
-#Logo {
-    border: 1px solid black;
-    height: 50%;
+
+
+.segundo-contenedor {
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+    
+    
+
+}
+
+.flex-izquierdo {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2px;
+    justify-content: space-between;
+    width: 450px;
+    
+
+}
+
+.flex-izquierdo p:first-child {
+    font-size: 1em;
+    font-weight: bold;
+    
     
 }
+p span {
+    color: rgb(103,63,230);
+    font-weight: bold;
+}
 
-li {
+.flex-izquierdo h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.flex-izquierdo ul {
+    font-size: 0.8em;
     list-style-type: none;
-    border: 2px solid black;
+}
+
+li i {
+    margin-right: 0.5em;
+    color: #21ba9f;
+    font-weight: bold;
     
 }
 
-i {
-    color:black;
-    margin-right: 5px;
+.flex-izquierdo p:last-child {
+     font-size: 0.8em;
 }
 
-ul{
-    display: flex;
-    border: 3px dotted black;
-    justify-content: space-between;
-    width: 100%;
-    padding: 5px;
-    
-}
-
-nav {
-    width: 35%;
+p i {
+    margin-right: 0.5em;
 }
 
 button {
-    background-color: blueviolet;
-    color: white;
-    border-radius: 30px;
-    height: 50px;
-    width: 15;
-    font-size: 16px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
+    width: 146px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    font-size: 0.8em;
+}
+.imagen {
+    width: 60%;
     
-    
-
     
 }
