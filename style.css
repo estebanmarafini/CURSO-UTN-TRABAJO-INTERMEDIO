@@ -5,26 +5,108 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    
 }
-
 
 body{
     font-size: 20px;
+    
 }
-.contenedor-principal{
 
-    /*width: 1280px;*/
-    font-family: "DM Sans", sans-serif;
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    font-weight: 400;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    
 }
+
+
+.logo, .media-logo { 
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    
+    
+}
+
+
+
+
+.media-logo, .menu-lista {
+    visibility: hidden;
+}
+
+.header-izquierdo {
+    align-self: center;
+    
+}
+
+
+.header-izquierdo ul {
+    margin: 1em 0 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    
+}
+
+.header-derecho ul {
+    margin: 1em 2em 1em 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.header-derecho ul button {
+    background-color: white;
+    width: 110px;
+    padding: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+
+
+.header-derecho img {
+    width: 30px;
+    
+    
+}
+
+.header-derecho li:first-child {
+    font-weight: bold;
+    
+}
+
+
+header ul {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+}
+
+/*hasta aqui css de header*/
+
+
 
 
 
 .segundo-contenedor {
     
     display: flex;
-    
     justify-content: space-between;
-    
+    padding: 8em 4em 1em 8em;
     
     
 
@@ -35,7 +117,8 @@ body{
     flex-direction: column;
     padding: 4em 2px;
     justify-content: space-between;
-    width: 450px;
+    width: auto;
+    
     
 
 }
@@ -43,10 +126,11 @@ body{
 .flex-izquierdo p:first-child {
     font-size: 1em;
     font-weight: bold;
+  
     
     
 }
-p span {
+.parrafo72 {
     color: rgb(103,63,230);
     font-weight: bold;
 }
@@ -56,15 +140,23 @@ p span {
     font-weight: bold;
 }
 
+.flex-izquierdo button {
+    background-color: rgb(103,61,230);
+    color: white;
+    border: none;
+}
+
+
 .flex-izquierdo ul {
     font-size: 0.8em;
     list-style-type: none;
 }
 
-li i {
+.flex-izquierdo li i {
     margin-right: 0.5em;
     color: #21ba9f;
     font-weight: bold;
+    font-size: 1.2em;
     
 }
 
@@ -86,4 +178,128 @@ button {
     width: 60%;
     
     
+}
+
+
+footer{
+    background-color: rgb(244,245,255);
+}
+
+
+.footer-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 8em;
+}
+
+
+.izquierdo-imagenes{
+    margin-top: 1em;
+}
+
+
+.izquierdo-imagenes img, .izquierdo-imagenes span  {
+    width: 3em;
+    border-radius: 5px;
+    border: 1px solid rgba(5, 5, 5, 0.125);
+
+}
+
+
+
+.izquierdo-imagenes span {
+     color: rgb(103,63,230);
+     width: auto;
+     font-weight: bold;
+     font-size: 14px;
+}
+
+
+
+.izquierdo-imagenes, .politicas {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  
+}
+
+
+
+.footer-derecho {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    
+}
+
+.derecho-iconos {
+    display: flex;
+    gap: 1em;
+}
+
+
+
+
+.politicas {
+    font-size: 14px;
+    padding-bottom: 1em;
+    gap: 1em;
+}
+
+.footer-ultimo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 1em 12em;
+    border-top: 2px solid rgba(0, 0, 0, 0.049);
+    margin-right: 1em;
+    
+    
+}
+
+.kodee {
+    background-color: rgb(103,61,230);
+    color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 25px;
+    box-sizing: content-box;
+    margin: 5px;
+    position: fixed;
+    bottom: 0;
+    right: 0 ;
+    border: none;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    /*body {font-size: 16px; }*/
+    .segundo-contenedor { display: flex;
+                          flex-direction:column;  
+                          padding: 2em 2em;
+                              }
+    .flex-izquierdo {padding-top: 1em !important;}
+    .imagen { width: auto;}
+                              
+    .header-izquierdo ul, .header-derecho ul { display: none;}
+    .media-logo, .menu-lista {visibility: visible;
+                 margin-left: 2em;
+                font-size: 4em;
+                display: block;}
+    .header-izquierdo {width: 100%;
+                        padding-bottom: 0.5em;}
+    .footer-principal {flex-direction: column-reverse;}
+    .derecho-iconos {max-width: 4rem;
+                justify-content: space-between;
+                 padding-bottom: 2em;       }
+    .izquierdo-imagenes { flex-wrap: wrap;}
+    
+}
+
+@media only screen and (max-width: 500px) {
+      body {font-size: 12px; }
+      .izquierdo-imagenes { flex-direction: column;}
 }
