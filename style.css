@@ -292,9 +292,10 @@ footer{
     .header-izquierdo {width: 100%;
                         padding-bottom: 0.5em;}
     .footer-principal {flex-direction: column-reverse;}
-    .derecho-iconos {max-width: 4rem;
-                justify-content: space-between;
-                 padding-bottom: 2em;       }
+    .footer-derecho {align-items: center;}
+    .derecho-iconos {justify-content: space-between;
+                    padding-bottom: 2em;       
+                    width: 100%;}
     .izquierdo-imagenes { flex-wrap: wrap;}
     
 }
