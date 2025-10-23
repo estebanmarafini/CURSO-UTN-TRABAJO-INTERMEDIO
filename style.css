@@ -26,7 +26,7 @@ header {
 
 
 .logo, .media-logo { 
-    font-size: 16px;
+    font-size: 0.8px;
     letter-spacing: 5px;
     font-weight: bold;
     
@@ -299,7 +299,21 @@ footer{
     
 }
 
-@media only screen and (max-width: 500px) {
-      body {font-size: 12px; }
-      .izquierdo-imagenes { flex-direction: column;}
+@media only screen and (max-width: 600px) {
+      body {font-size: 12px !important;
+            max-width: 400px; }
+        .segundo-contenedor { display: flex;
+                          flex-direction:column;  
+                          padding: 2em 2em;
+                              }
+      header {max-width: 600px;}
+      .izquierdo-imagenes { flex-wrap: wrap;}
+       .media-logo, .menu-lista {visibility: visible;
+                 margin-left: 2em;
+                font-size: 2em;
+                display: block;}
+        .footer-ultimo {padding: 1em;}
+        .derecho-iconos {max-width: 4rem;
+                justify-content: space-between;
+                 padding-bottom: 2em;       }
 }
