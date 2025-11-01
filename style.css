@@ -209,11 +209,11 @@ button {
 
 .migracion i {
     height: auto;
-    width: 100%px;
+    width: fit-content;
     background-color: rgb(103,61,230);
     border-radius: 5px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     font-size: 30px;
 }
 
@@ -388,13 +388,11 @@ footer{
         width: 100%;
     }
 
-    .hijo i {
-        width: fit-content;
-        padding: 10px;
-    }
-
-    .hijo h6 {font-size: 30px;}
-    .hijo p { font-size: 20px;}
+    .migracion > p {
+           font-size: 0.9em;
+        }
+    .hijo h6 {font-size: 1.3em;}
+    .hijo p { font-size: 0.9em;}
     
 }
 
