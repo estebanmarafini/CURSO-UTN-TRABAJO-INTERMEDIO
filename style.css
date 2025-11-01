@@ -386,13 +386,15 @@ footer{
 
     .hijo {
         width: 100%;
+        height: auto;
+        padding: 1em;
     }
 
     .migracion > p {
            font-size: 0.9em;
         }
-    .hijo h6 {font-size: 1.3em;}
-    .hijo p { font-size: 0.9em;}
+    .hijo h6 {font-size: 1.1em;}
+    .hijo p { font-size: 0.8em;}
     
 }
 
