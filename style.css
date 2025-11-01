@@ -25,18 +25,12 @@ header {
 }
 
 
-.logo, .media-logo { 
-    font-size: 0.8em;
-    letter-spacing: 5px;
-    font-weight: bold;
-    
-    
-}
 
 
 
 
-.media-logo, .menu-lista {
+
+.menu-lista {
     visibility: hidden;
 }
 
@@ -175,12 +169,90 @@ button {
     font-size: 0.8em;
 }
 .imagen {
-    width: 60%;
+    width: 70%;
     
     
 }
 
+.migracion {
+    background-color: rgb(31,19,70);
+    color: white;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-around;
+    height: 730px;
+}
 
+.padre {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.hijo {
+    width: 370px;
+    height: 280px;
+    background-color: rgb(47,28,106);
+    border-radius:10px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    
+
+}
+
+.migracion i {
+    height: auto;
+    width: 100%px;
+    background-color: rgb(103,61,230);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.migracion h6 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hijo p {
+    font-size: 16px;
+}
+
+.migracion h2 {
+    
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.migracion >p {
+    
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    
+}
+
+.empezar {
+    width: 165px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: rgb(103,61,230);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+/*hasta aqui el main*/
 footer{
     background-color: rgb(244,245,255);
 }
@@ -275,8 +347,10 @@ footer{
 }
 
 
-@media only screen and (max-width: 1000px) {
-    /*body {font-size: 16px; }*/
+@media only screen and (max-width: 1024px) {
+    
+    body {font-size: 30px;}
+
     .segundo-contenedor { display: flex;
                           flex-direction:column;  
                           padding: 2em 2em;
@@ -284,11 +358,11 @@ footer{
     .flex-izquierdo {padding-top: 1em !important;}
     .imagen { width: auto;}
                               
-    .header-izquierdo ul, .header-derecho ul { display: none;}
-    .media-logo, .menu-lista {visibility: visible;
-                 margin-left: 2em;
-                font-size: 4em;
-                display: block;}
+    .lista-header li:first-child~li, .header-derecho ul { display: none;}
+
+    .menu-lista {visibility: visible;
+                font-size:3em;}
+    
     .header-izquierdo {width: 100%;
                         padding-bottom: 0.5em;}
     .footer-principal {flex-direction: column-reverse;}
@@ -297,24 +371,60 @@ footer{
                     padding-bottom: 2em;       
                     width: 100%;}
     .izquierdo-imagenes { flex-wrap: wrap;}
+
+   .migracion {
+                height: auto;
+    }
+
+    .empezar {
+        margin-top: 5px;
+    }
+    .padre{
+                flex-wrap: wrap;
+                
+    }
+
+    .hijo {
+        width: 100%;
+    }
+
+    .hijo i {
+        width: fit-content;
+        padding: 10px;
+    }
+
+    .hijo h6 {font-size: 30px;}
+    .hijo p { font-size: 20px;}
     
 }
 
-@media only screen and (max-width: 600px) {
-      body {font-size: 12px !important;
-            max-width: 400px; }
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+        .menu-lista,  {visibility: visible;}
         .segundo-contenedor { display: flex;
                           flex-direction:column;  
-                          padding: 2em 2em;
+                          padding: 0.5em 0.5em;
                               }
       header {max-width: 600px;}
       .izquierdo-imagenes { flex-wrap: wrap;}
-       .media-logo, .menu-lista {visibility: visible;
-                 margin-left: 2em;
-                font-size: 2em;
-                display: block;}
-        .footer-ultimo {padding: 1em;}
-        .derecho-iconos {max-width: 4rem;
+       
+        .footer-ultimo {padding: 1em;
+                flex-direction: column;}
+        .derecho-iconos {width: 100%;
                 justify-content: space-between;
                  padding-bottom: 2em;       }
+
+        .footer-principal {padding: 5%;}
+
+        .derecho-iconos {
+            width: 100%;
+        }
+
+        .migracion > p {
+            text-align: left;
+        }
+
+        .imagen {width: 100%;}
+        .flex-izquierdo {padding-bottom: 5px;}
+        .kodee {font-size: 0.5em;
+                padding: 2px;}
 }
