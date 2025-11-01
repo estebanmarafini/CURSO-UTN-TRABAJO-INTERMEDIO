@@ -427,4 +427,10 @@ footer{
         .flex-izquierdo {padding-bottom: 5px;}
         .kodee {font-size: 0.5em;
                 padding: 2px;}
+        
+        .hijo {
+        width: 100%;
+        height: auto;
+        padding: 1em;
+    }
 }
